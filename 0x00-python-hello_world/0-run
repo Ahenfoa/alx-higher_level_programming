@@ -1,11 +1,4 @@
 #!/bin/bash
 
-if [[ -z "$PYFILE" ]]; then
-  echo "PYFILE is not set"
-  exit 1
-elif [[ ! -f "$PYFILE" ]]; then
-  echo "PYFILE is not a file: $PYFILE"
-  exit 1
-fi
 
 python3 "$PYFILE"
